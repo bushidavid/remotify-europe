@@ -1,15 +1,13 @@
-import Ract from "react";
+import React from "react";
 
-
-import './Navbar';
-import Navbar from './Navbar';
-import Home from './Home';
-import InputJob from './InputJob';
-import JobList from "./JobList";
-import Register from "./Register";
+import Navbar from './navbar';
+import Home from './home';
+import InputJob from './input-job';
+import JobList from "./job-list";
+import Register from "./register;
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Login from './Login';
-import CreateJob from './CreateJob';
+import Login from './login';
+import CreateJob from './create-job';
 
 function App() {
   

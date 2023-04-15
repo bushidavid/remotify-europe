@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './index.css';
-import JobList from './JobList';
+import JobList from './job-list';
 
 const Home = () => {
     return (
