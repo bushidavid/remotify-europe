@@ -22,6 +22,11 @@ module.exports = {
       '6': '6px',
       '8': '8px',
     },
+    colors : {
+      'remotify-lb' : '#39D1CC',
+      'remotify-db' : '#142C42',
+    },
   },
   plugins: [],
+
 }

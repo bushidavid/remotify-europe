@@ -14,13 +14,13 @@ const CreateJob = () => {
     const [salaryMin, setSalaryMin] = useState("");
     const [salaryMax, setSalaryMax] = useState("");
     const [candidateLevel, setCandidateLevel] = useState("");
-    const [currency, setCurrency] = useState("EUR")
+    const [currency, setCurrency] = useState("EUR");
     const options = [];
     
     const getCountries = async () =>{
         try {
             
-            const response = await fetch("http://localhost:4000/api/jobs/countries");
+            const response = await fetch("http://localhost:3000/api/countries/countries");
             const jsonData = await response.json();
             
             setCountries(jsonData);
@@ -36,7 +36,7 @@ const CreateJob = () => {
         try {
            const selectedCountries = jobCountry.join();
            const job = {jobTitle, selectedCountries, jobDepartment, jobDescription, salaryMin, salaryMax, worldwide, currency, company, compDescription, candidateLevel};
-           fetch("http://localhost:4000/api/jobs/createjob", {
+           fetch("http://localhost:3000/api/jobs/create-job", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(job)
